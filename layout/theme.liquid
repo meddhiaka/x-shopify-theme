@@ -4,7 +4,7 @@
     {{ 'styles.css' | asset_url | stylesheet_tag }}
   </head>
   <body>
-    {% render 'header' %}
+    {% section 'header' %}
     {{ content_for_layout }}
     {{ 'scripts.js' | asset_url | script_tag }}
   </body>
